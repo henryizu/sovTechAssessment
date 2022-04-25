@@ -18,6 +18,7 @@ String browserPath = "C:/eclipse/dependencies/";
 	driver.manage().window().maximize(); // - maximise google chrome
 	Thread.sleep(10000);  //wait for 5 secs
 		driver.get("https://igrcs-qa-studio.pwcng-rpa.com/");
+		//ghnjkml,yujmk,l
 
 		Thread.sleep(15000);
 		driver.findElement(By.xpath("//input[@id='userId']")).sendKeys("admin");
