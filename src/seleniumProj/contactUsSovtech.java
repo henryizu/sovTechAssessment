@@ -16,14 +16,14 @@ import graphql.Assert;
 public class contactUsSovtech {
 static ChromeDriver driver;
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 String browserPath = "C:/eclipse/dependencies/";
 		
 		System.setProperty("webdriver.chrome.driver", browserPath+"chromedriver.exe");
 		
 	WebDriver driver = new ChromeDriver(); //- launch google chrome
 	driver.manage().window().maximize(); // - maximise google chrome
-	Thread.sleep(2000);  //wait for 5 secs
+	Thread.sleep(2000);  
 		driver.get("https://www.sovtech.co.za/contact-us/");
 		
 
@@ -36,7 +36,7 @@ String browserPath = "C:/eclipse/dependencies/";
 	
 
 	  driver.findElement(By.xpath("//*[@id='your_name-c2e387f9-4bd8-496f-ab2a-81fbbc31712a']")).sendKeys("Henry Izumunna");
-		driver.findElement(By.xpath("//input[@id='email-c2e387f9-4bd8-496f-ab2a-81fbbc31712a']")).sendKeys("Automationsampletest");
+		driver.findElement(By.xpath("//input[@id='email-c2e387f9-4bd8-496f-ab2a-81fbbc31712a']")).sendKeys("Automationsampletest@gmail.com");
 		  driver.findElement(By.xpath("//input[@id='mobilephone-c2e387f9-4bd8-496f-ab2a-81fbbc31712a']")).sendKeys("2347036494598");
 	    driver.findElement(By.xpath("//select[@id='numemployees-c2e387f9-4bd8-496f-ab2a-81fbbc31712a']")).click();
 	    driver.findElement(By.xpath("//*[@id=\"numemployees-c2e387f9-4bd8-496f-ab2a-81fbbc31712a\"]/option[5]")).click();
